@@ -54,3 +54,17 @@ function playRPSFive() {
     playRPS(getPlayerChoice(), getComputerChoice());
     playRPS(getPlayerChoice(), getComputerChoice());
 }
+
+function scoreCount(playerWinCount, computerWinCount) {
+    if (playerWinCount > computerWinCount) {
+        console.log(`You win!`)
+    } else if (computerWinCount > playerWinCount) {
+        console.log(`You lose!`)
+    } else {
+        console.log(`It's a tie!`)
+    }
+}
+
+playRPSFive();
+
+scoreCount(playerWinCount, computerWinCount);
