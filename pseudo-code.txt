@@ -1,6 +1,6 @@
-establish rules of rps in array
+establish rules of rps in array CHECK
 
-declare playerwin and computer win variables set to 0 
+declare playerwin and computer win variables set to 0 CHECK 
 
 create computerChoice function that gets random values from rules array
 
