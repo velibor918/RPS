@@ -1,0 +1,18 @@
+establish rules of rps in array
+
+declare playerwin and computer win variables set to 0 
+
+create computerChoice function that gets random values from rules array
+
+create playerChoice function that asks the user to input a value of rock paper or scissors
+    make the value always return with only the first letter capitalized 
+
+create a playerWin function that returns flavor text and increments playerwincount by 1
+
+create computerWin function that returns flavor text and increments computerwincount by 1 
+
+create a function that plays one game of rock paper scissors 
+
+create a function that calls one game function five times
+
+create a function that checks the end score and declares a winner 
