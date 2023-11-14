@@ -14,3 +14,8 @@ function getPlayerChoice() {
 
     return pChoiceString.charAt(0).toUpperCase() + pChoiceString.slice(1).toLowerCase();
 }
+
+function playerWin(getPlayerChoice, getComputerChoice) {
+    playerWinCount += 1; 
+    console.log(`You win! ${getPlayerChoice} beats ${getComputerChoice}`);
+}
