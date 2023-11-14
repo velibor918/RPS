@@ -9,7 +9,7 @@ create playerChoice function that asks the user to input a value of rock paper o
 
 create a playerWin function that returns flavor text and increments playerwincount by 1 CHECK
 
-create computerWin function that returns flavor text and increments computerwincount by 1 
+create computerWin function that returns flavor text and increments computerwincount by 1 CHECK
 
 create a function that plays one game of rock paper scissors 
 

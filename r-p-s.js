@@ -19,3 +19,8 @@ function playerWin(getPlayerChoice, getComputerChoice) {
     playerWinCount += 1; 
     console.log(`You win! ${getPlayerChoice} beats ${getComputerChoice}`);
 }
+
+function computerWin(getPlayerChoice, getComputerChoice) {
+    computerWinCount += 1;
+    console.log(`You lose! ${getComputerChoice} beats ${getPlayerChoice}`);
+}
