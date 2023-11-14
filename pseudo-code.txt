@@ -13,6 +13,6 @@ create computerWin function that returns flavor text and increments computerwinc
 
 create a function that plays one game of rock paper scissors CHECK
 
-create a function that calls one game function five times
+create a function that calls one game function five times CHECK 
 
 create a function that checks the end score and declares a winner 

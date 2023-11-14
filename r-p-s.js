@@ -46,3 +46,11 @@ function playRPS(getPlayerChoice, getComputerChoice) {
         computerWin(getPlayerChoice, getComputerChoice);
     }
 }
+
+function playRPSFive() {
+    playRPS(getPlayerChoice(), getComputerChoice());
+    playRPS(getPlayerChoice(), getComputerChoice());
+    playRPS(getPlayerChoice(), getComputerChoice());
+    playRPS(getPlayerChoice(), getComputerChoice());
+    playRPS(getPlayerChoice(), getComputerChoice());
+}
