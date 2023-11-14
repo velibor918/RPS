@@ -11,7 +11,7 @@ create a playerWin function that returns flavor text and increments playerwincou
 
 create computerWin function that returns flavor text and increments computerwincount by 1 CHECK
 
-create a function that plays one game of rock paper scissors 
+create a function that plays one game of rock paper scissors CHECK
 
 create a function that calls one game function five times
 
