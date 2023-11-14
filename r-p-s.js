@@ -7,3 +7,10 @@ function getComputerChoice() {
     return rules[Math.floor(Math.random() * rules.length)];
 }
 
+function getPlayerChoice() {
+    let pChoice = prompt(`Lets play a game of Rock, Paper, Scissors! First to five wins!`); 
+
+    let pChoiceString = pChoice.toString();
+
+    return pChoiceString.charAt(0).toUpperCase() + pChoiceString.slice(1).toLowerCase();
+}

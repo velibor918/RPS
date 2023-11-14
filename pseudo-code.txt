@@ -5,7 +5,7 @@ declare playerwin and computer win variables set to 0 CHECK
 create computerChoice function that gets random values from rules array CHECK 
 
 create playerChoice function that asks the user to input a value of rock paper or scissors
-    make the value always return with only the first letter capitalized 
+    make the value always return with only the first letter capitalized                         CHECK
 
 create a playerWin function that returns flavor text and increments playerwincount by 1
 
