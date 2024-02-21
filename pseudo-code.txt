@@ -1,11 +1,11 @@
-establish rules of rps in array CHECK
+/* establish rules of rps in array CHECK
 
 declare playerwin and computer win variables set to 0 CHECK 
 
 create computerChoice function that gets random values from rules array CHECK 
 
 create playerChoice function that asks the user to input a value of rock paper or scissors
-    make the value always return with only the first letter capitalized                         CHECK
+    make the value always return with only the first letter capitalized                CHECK
 
 create a playerWin function that returns flavor text and increments playerwincount by 1 CHECK
 
@@ -15,4 +15,79 @@ create a function that plays one game of rock paper scissors CHECK
 
 create a function that calls one game function five times CHECK 
 
-create a function that checks the end score and declares a winner CHECK
+create a function that checks the end score and declares a winner CHECK */
+
+
+
+
+
+create html skeleton for rps gui
+
+    h3 lets play a game of rps
+    div buttons 
+        button rock
+               paper
+               scissors
+    div score
+        p result
+        p score-board 
+
+add classes/ids to html elements
+
+create css styling 
+
+add basic styling and alignment properties
+add rounded corners and hover/onclick effect for buttons
+add neon illusion to entire project body
+
+js
+
+keep rules arr
+keep playerwincount
+keep computerwincount   
+keep computerChoice function
+keep scoreCount function
+
+FOR NOW 
+remove playerChoice function
+comment out playerWin function 
+comment out computerWin function 
+comment out playRPS function 
+comment out playRPSFive funciton 
+
+
+
+
+rewrite scoreCount function 
+    to account for best of 5 
+    to change result text content 
+    to remove event listener from all buttons
+        if computerWinCount <5 && playerWinCount >= 5 
+            result textcontent you win refresh the page to play again 
+            buttons remove event listener 
+        else if computerWinCount >=5 && playerWinCount <5 
+            result textcontent you lose refresh the page to play again 
+            buttons remove event listener 
+        else if computerWinCount == 5 && playerWinCount == 5 
+            result textcontent its a tie refresh the page to play again 
+            buttons remove event listener 
+
+
+add event listeners for buttons 
+create function that serve player choice options and take computerchoice as arg
+    if computerChoice beats button choice
+        increment computerWinCount
+        scoreresult text content computer won 
+        score-board text content playerWinCount - computerWinCount
+        run scoreCount function
+    else if computerChoice loses to button choice
+        increment playerWinCount 
+        scoreresult textcontent player won  
+        score-board text content playerWinCount - computerWinCount
+        run scoreCount function 
+    else if computerChoice equals button choice 
+        scoreresult textcontent its a tie 
+        run scoreCount function
+
+create this function three times for each choice 
+
