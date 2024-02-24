@@ -20,7 +20,7 @@ create a function that checks the end score and declares a winner CHECK */
 
 
 
-
+/*
 create html skeleton for rps gui
 
     h3 lets play a game of rps
@@ -33,6 +33,7 @@ create html skeleton for rps gui
         p score-board 
 
 add classes/ids to html elements
+*/
 
 create css styling 
 
