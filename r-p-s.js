@@ -65,6 +65,8 @@ function scoreCount(playerWinCount, computerWinCount) {
     }
 }
 
+/*
 playRPSFive();
 
-scoreCount(playerWinCount, computerWinCount);
+scoreCount(playerWinCount, computerWinCount); 
+*/
