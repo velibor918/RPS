@@ -1,13 +1,25 @@
 body {
     background-color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vibur', serif;
     color: white;
 }
 
 h3 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-weight: 100;
+    font-size: 4.2rem;
+    color: #ffffff;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 55px #770f9c,
+    0 0 85px #770f9c,
+    0 0 100px #770f9c,
+    0 0 110px #770f9c,
+    0 0 165px #770f9c;
+    
 }
 
 .btns {
@@ -23,6 +35,6 @@ button {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 100px;
     font-weight: bold;
 }
