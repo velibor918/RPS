@@ -76,3 +76,35 @@ button:active {
     0 0 165px rgb(233, 77, 56);
     border: 10px solid rgb(233, 77, 56);
 }
+
+.result {
+    margin-top: 10px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 55px rgb(214, 161, 61),
+    0 0 85px rgb(214, 161, 61),
+    0 0 100px rgb(214, 161, 61),
+    0 0 110px rgb(214, 161, 61),
+    0 0 165px rgb(214, 161, 61);
+
+}
+
+.score-board {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 55px rgb(233, 77, 56),
+    0 0 85px rgb(233, 77, 56),
+    0 0 100px rgb(233, 77, 56),
+    0 0 110px rgb(233, 77, 56),
+    0 0 165px rgb(233, 77, 56);
+}
+
+.Score {
+    text-align: center;
+    font-size: 50px;
+}
+

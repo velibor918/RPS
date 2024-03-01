@@ -37,9 +37,9 @@ add classes/ids to html elements
 
 create css styling 
 
-add basic styling and alignment properties
-add rounded corners and hover/onclick effect for buttons
-add neon illusion to entire project body
+add basic styling and alignment properties CHECK 
+add rounded corners and hover/onclick effect for buttons CHECK 
+add neon illusion to entire project body DONE 
 
 js
 
