@@ -63,3 +63,16 @@ button:hover {
     0 0 165px rgb(214, 161, 61);
     border: 10px solid rgb(214, 161, 61);
 }
+
+button:active {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 55px rgb(233, 77, 56),
+    0 0 85px rgb(233, 77, 56),
+    0 0 100px rgb(233, 77, 56),
+    0 0 110px rgb(233, 77, 56),
+    0 0 165px rgb(233, 77, 56);
+    border: 10px solid rgb(233, 77, 56);
+}
