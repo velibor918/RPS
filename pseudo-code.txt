@@ -60,8 +60,8 @@ comment out playRPSFive funciton
 
 
 rewrite scoreCount function 
-    to account for best of 5 
-    to change result text content 
+    to account for best of 5  CHECK
+    to change result text content CHECK
     to remove event listener from all buttons
         if computerWinCount <5 && playerWinCount >= 5 
             result textcontent you win refresh the page to play again 

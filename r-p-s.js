@@ -5,6 +5,8 @@ let computerWinCount = 0;
 
 const result = document.querySelector('.result');
 
+const scoreBoard = document.querySelector('.score-board');
+
 function getComputerChoice() {
     return rules[Math.floor(Math.random() * rules.length)];
 }
@@ -27,6 +29,7 @@ function computerWin(getPlayerChoice, getComputerChoice) {
     console.log(`You lose! ${getComputerChoice} beats ${getPlayerChoice}. You have ${playerWinCount} and I have ${computerWinCount}.`);
 }
 
+/*
 function playRPS(getPlayerChoice, getComputerChoice) {
     if (getComputerChoice === `Rock` && getPlayerChoice === `Rock`) {
         console.log(`It's a tie!`);
@@ -48,6 +51,7 @@ function playRPS(getPlayerChoice, getComputerChoice) {
         computerWin(getPlayerChoice, getComputerChoice);
     }
 }
+*/
 
 function playRPSFive() {
     playRPS(getPlayerChoice(), getComputerChoice());
@@ -67,9 +71,25 @@ function scoreCount(playerWinCount, computerWinCount) {
     }
 }
 
+const rockBtn = document.querySelector('.Rock');
 
-playRPSFive();
-playRPSFive();
+rockBtn.addEventListener('click', getComputerChoice) {
+    if ( getComputerChoice === 'Rock') {
+        result.textContent = `it's a tie!`;
+    } else if (getComputerChoice === `Paper`) {
+        computerWin += 1; 
+        result.textContent = 'You lose! Paper beats rock.'
+        scoreBoard.textContent = `You:${playerWinCount} Computer:${computerWinCount}`
+        scoreCount(playerWinCount, computerWinCount)
+    } else if (getComputerChoice === `Scissors`) {
+        playerWinCount +=1;
+        result.textContent = `You win! Rock beats Scissors.`
+        scoreBoard.textContent = `You:${playerWinCount} Computer:${computerWinCount}`
+        scoreCount(playerWinCount, computerWinCount)
+    }
+}
 
-scoreCount(playerWinCount, computerWinCount); 
+// playRPSFive();
+
+// scoreCount(playerWinCount, computerWinCount); 
 
