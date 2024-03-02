@@ -3,6 +3,8 @@ let rules = [`Rock`, `Paper` ,`Scissors`];
 let playerWinCount = 0;
 let computerWinCount = 0;
 
+const result = document.querySelector('.result');
+
 function getComputerChoice() {
     return rules[Math.floor(Math.random() * rules.length)];
 }
@@ -56,17 +58,18 @@ function playRPSFive() {
 }
 
 function scoreCount(playerWinCount, computerWinCount) {
-    if (playerWinCount > computerWinCount) {
-        console.log(`You win!`)
-    } else if (computerWinCount > playerWinCount) {
-        console.log(`You lose!`)
-    } else {
-        console.log(`It's a tie!`)
+    if (playerWinCount >= 5 && computerWinCount < 5) {
+        result.textContent = `You win! Refresh the page to play again!`;
+    } else if (computerWinCount >= 5 && playerWinCount < 5) {
+        result.textContent = `You lose! Refresh the page to play again!`
+    } else if(playerWinCount == 5 && computerWinCount == 5) {
+        result.textContent = `It's a tie! Refresh the page to play again.`
     }
 }
 
-/*
+
+playRPSFive();
 playRPSFive();
 
 scoreCount(playerWinCount, computerWinCount); 
-*/
+
