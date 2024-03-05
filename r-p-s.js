@@ -109,6 +109,26 @@ paperBtn.addEventListener('click', () => {
     } } );
 
 
+const scissorsBtn = document.querySelector('.Scissors');
+
+scissorsBtn.addEventListener('click', () => {
+    const test = getComputerChoice();
+    if (test === 'Scissors') {
+        result.textContent = `It's a tie!`
+    } else if (test === `Rock`) {
+        computerWinCount += 1;
+        result.textContent = `You lose! Rock beats Scissors.`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
+        scoreCount(playerWinCount, computerWinCount);
+    } else if( test === `Paper`) {
+        playerWinCount += 1;
+        result.textContent = `You win! Scissors beats Paper.`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
+        scoreCount(playerWinCount, computerWinCount);
+    }
+
+} );
+
 // playRPSFive();
 
 // scoreCount(playerWinCount, computerWinCount); 
