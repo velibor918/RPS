@@ -61,13 +61,24 @@ function playRPSFive() {
     playRPS(getPlayerChoice(), getComputerChoice());
 }
 
+
+
 function scoreCount(playerWinCount, computerWinCount) {
     if (playerWinCount >= 5 && computerWinCount < 5) {
-        result.textContent = `You win! Refresh the page to play again!`;
+        computerWinCount = 0; 
+        playerWinCount = 0;
+        result.textContent = `You win! Want to play again?`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
     } else if (computerWinCount >= 5 && playerWinCount < 5) {
-        result.textContent = `You lose! Refresh the page to play again!`
+        computerWinCount = 0; 
+        playerWinCount = 0;
+        result.textContent = `You lose! Want to play again?`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
     } else if(playerWinCount == 5 && computerWinCount == 5) {
-        result.textContent = `It's a tie! Refresh the page to play again.`
+        result.textContent = `It's a tie! Want to play again?`;
+        computerWinCount = 0; 
+        playerWinCount = 0;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
     }
 }
 
