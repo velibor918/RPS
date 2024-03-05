@@ -79,16 +79,35 @@ rockBtn.addEventListener('click', () => {
         result.textContent = `It's a tie!`;
     } else if (test === `Paper`) {
         computerWinCount += 1; 
-        result.textContent = 'You lose! Paper beats Rock.'
-        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`
+        result.textContent = 'You lose! Paper beats Rock.';
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
         scoreCount(playerWinCount, computerWinCount)
     } else if (test === `Scissors`) {
         playerWinCount +=1;
-        result.textContent = `You win! Rock beats Scissors.`
-        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`
+        result.textContent = `You win! Rock beats Scissors.`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
         scoreCount(playerWinCount, computerWinCount)
     }
-} )
+} );
+
+const paperBtn = document.querySelector('.Paper');
+
+paperBtn.addEventListener('click', () => {
+    const test = getComputerChoice(); 
+    if (test === `Paper`) {
+        result.textContent = `It's a tie!`;
+    } else if (test === `Rock`) {
+        playerWinCount += 1;
+        result.textContent = `You win! Paper beats Rock.`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
+        scoreCount(playerWinCount, computerWinCount);
+    } else if (test === `Scissors`) {
+        computerWinCount += 1; 
+        result.textContent = `You lose! Scissors beats Paper.`;
+        scoreBoard.textContent = `You: ${playerWinCount} - Robot: ${computerWinCount}`;
+        scoreCount(playerWinCount, computerWinCount);
+    } } );
+
 
 // playRPSFive();
 
