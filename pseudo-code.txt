@@ -58,20 +58,21 @@ comment out playRPSFive funciton
 
 
 
-
+/*
 rewrite scoreCount function 
     to account for best of 5  CHECK
     to change result text content CHECK
     to remove event listener from all buttons 
         if computerWinCount <5 && playerWinCount >= 5 
             result textcontent you win refresh the page to play again 
-            buttons remove event listener 
+            resets scores
         else if computerWinCount >=5 && playerWinCount <5 
             result textcontent you lose refresh the page to play again 
-            buttons remove event listener 
+            resets scores
         else if computerWinCount == 5 && playerWinCount == 5 
             result textcontent its a tie refresh the page to play again 
-            buttons remove event listener 
+            resets scores
+*/
 
 /*
 add event listeners for buttons 

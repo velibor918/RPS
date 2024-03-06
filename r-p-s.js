@@ -63,7 +63,7 @@ function playRPSFive() {
 
 
 
-function scoreCount(playerWinCount, computerWinCount) {
+function scoreCount(a, b) {
     if (playerWinCount >= 5 && computerWinCount < 5) {
         computerWinCount = 0; 
         playerWinCount = 0;
